@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, #87CEEB, #a0daf0, #4cace7, #bcecfd );
+    min-height: 100vh;
+    background-size: 400% 400%;
+    animation: gradient 12s ease infinite;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+   background: url("bg.jpg") center/cover no-repeat;
+   backdrop-filter: blur(4px);
+   -webkit-backdrop-filter: blur(4px);
+   padding: 30px;
+   width: 420px;
+   border-radius: 15px;
+   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color:#24c7f0;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: #2a2a40;
+    color: antiquewhite;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+button {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: scale(1.03);
+}
+
+.input-section button {
+    background: #00c896;
+    color: black;
+}
+
+ul {
+    list-style: none;
+    margin-top: 10px;
+ }
+
+ li {
+  background: #2a2a40;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.2s;
+ }
+
+ li:hover {
+    background: #343456;
+ }
+
+ .completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+ }
+
+ li button {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 5px 8px;
+    font-size: 12px;
+ }
+
+ .progress-section {
+    margin-top: 15px;
+ }
+
+ h2 {
+    font-family: 'Segoe UI', sans-serif;
+    color: #24c7f0;
+    font-size: 19px;
+ }
+
+ .progress-bar {
+    background: #363636;
+    height: 18px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 5px;
+ }
+
+ .progress-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #87CEEB, #9B5DE0);
+    animation: gradient 12s ease infinite;
+    background-size: 400% 400%;
+ }
+
+ @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+ }

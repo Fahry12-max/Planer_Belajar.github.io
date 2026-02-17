@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planeer_belajar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Planeer Belajar Harian</h1>
+
+        <div class="input-section">
+            <input type="text" id="taskInput" placeholder="Masukkan Tugas">
+            <input type="date" id="dateInput">
+            <button onclick="addTask()">Tambah</button>
+        </div>
+        <h2 id="selectedDate"></h2>
+        <ul id="taskList"></ul>
+        <div class="progress-section">
+            <h2>Progress: <span id="progressText">0%</span></h2>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
